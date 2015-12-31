@@ -1,5 +1,5 @@
 // ----------
-// Colour
+// Media queries
 // ----------
 
 bp($condition)
@@ -14,20 +14,20 @@ bp($condition)
 
 $media_cache = {}
 $media_aliases = {
-  // minMob: $mobileArg
-  minMob: '(min-width : 640px)'
-  mobile: '(max-width : 640px)'
-  minTab: '(min-width : 864px)'
-  tablet: '(max-width : 864px)'
-  // minFull: '(min-width : ' + $width + ')'
-  // fullWidth: '(min-width : ' + $width + ')'
+  minMob: 'only screen and (min-width : 640px)'
+  minTab: 'only screen and (min-width : 864px)'
+  desktop-small: 'only screen and (min-width : 865px) and (max-width : 1199px)'
+  minDesktop: 'only screen and (min-width : 1200px)'
+  desktop: 'only screen and (max-width : 1080px)'
+  tablet: 'only screen and (max-width : 864px)'
+  mobile: 'only screen and (max-width : 640px)'
+  retina: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)'
+  print: 'only print'
 }
 
 dump_media_cache()
   for $media, $blocks in $media_cache
     $media = unquote($media_aliases[$media] || $media)
-    $media = '(%s)' % $media unless match('\(', $media)
-    $media = 'only screen and %s' % $media
     @media $media
       for $block in $blocks
         {$block}
