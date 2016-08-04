@@ -1,26 +1,32 @@
 {
   "name": "opal-coast",
-  "version": "1.0.0",
-  "description": "An easily-extensible stylus framework for getting projects off on the right foot, with fundamental typography and responsive grid layout rules out of the box.",
-  "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "",
+  "author": "[tom]",
+  "main": "",
+  "engines": {
+    "node": ">= 0.8.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rook-tx/opal-coast.git"
-  },
-  "author": "Tom Corbett",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rook-tx/opal-coast/issues"
-  },
-  "homepage": "https://github.com/rook-tx/opal-coast#readme",
+  "scripts": {},
+  "dependencies": {},
   "devDependencies": {
-    "del": "^2.0.2",
-    "gulp": "^3.9.0",
+    "coffee-script": "*",
+    "gulp": "*",
     "gulp-autoprefixer": "^3.1.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-stylus": "^2.1.0"
-  }
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-copy": "0.0.2",
+    "gulp-data": "^1.2.1",
+    "gulp-load-plugins": "*",
+    "gulp-clean-css": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "*",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "*",
+    "http-rewrite-middleware": "^0.1.6"
+  },
+  "keywords": [],
+  "readmeFilename": "README.md",
+  "license": "BSD"
 }

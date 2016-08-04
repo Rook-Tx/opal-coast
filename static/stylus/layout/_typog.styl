@@ -1,0 +1,54 @@
+// ----------
+// Core type
+// ----------
+
+h1, h2
+  font-family $hfont
+  font-weight $bold
+
+h1
+  font-size ($h1/$p)*1em
+  line-height $let1
+  mgn(1,0,lh:h1)
+
+h2
+  font-size ($h2/$p)*1em
+  line-height $let2
+  mgn(1,0,lh:h2)
+
+h3
+  font-size ($h3/$p)*1em
+  line-height $let3
+  mgn(1,0,lh:h3)
+
+h4
+  font-size ($h4/$p)*1em
+  line-height $let4
+  mgn(1,0,lh:h4)
+
+h5
+  font-size ($h5/$p)*1em
+  line-height $let5
+  mgn(1,0,lh:h5)
+
+p
+  mgn(1,0)
+
+h1, h2, h3, h4, h5, p
+  max-width $pwidth*1em
+
+
+// ----------
+// Modifers
+// ----------
+
+strong, b
+  font-weight $bold
+  letter-spacing normal
+
+em, i
+  font-style italic
+
+sup
+  font-size smaller
+  vertical-align top
